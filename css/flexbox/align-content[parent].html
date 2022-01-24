@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flexbox</title>
+
+	<style type="text/css">
+		*{ box-sizing: border-box; }
+		.item{
+			background: orange;
+			width: 125px;
+		}
+		.item:nth-child(even){
+			background: green;
+		}
+		.container1{
+			border: 1px solid red;
+			margin: 15px;
+			width: 600px;
+			height: 300px;
+			
+
+			display: flex;
+			flex-wrap: wrap;
+			align-content: flex-start;
+		}
+
+		.container2{
+			border: 1px solid red;
+			margin: 15px;
+			padding: 15px;
+			height: 300px;
+			width: 600px;
+
+			display: flex;
+			flex-wrap: wrap;
+			align-content: center;
+		}
+
+		.container3{
+			border: 1px solid red;
+			margin: 15px;
+			padding: 15px;
+			height: 300px;
+			width: 600px;
+
+			display: flex;
+			flex-wrap: wrap;
+			align-content: flex-end;
+		}
+
+		.container4{
+			border: 1px solid red;
+			margin: 15px;
+			padding: 15px;
+			width: 600px;
+			height: 300px;
+
+			display: flex;
+			flex-wrap: wrap;
+			align-content: stretch;
+		}
+		.container5{
+			border: 1px solid red;
+			margin: 15px;
+			padding: 15px;
+			width: 600px;
+			height: 300px;
+
+			display: flex;
+			flex-wrap: wrap;
+			align-content: space-between;
+		}
+		.container6{
+			border: 1px solid red;
+			margin: 15px;
+			padding: 15px;
+			width: 600px;
+			height: 300px;
+
+			display: flex;
+			flex-wrap: wrap;
+			align-content: space-around;
+		}
+		.container7{
+			border: 1px solid red;
+			margin: 15px;
+			padding: 15px;
+			width: 600px;
+			height: 400px;
+
+			display: flex;
+			flex-wrap: wrap;
+			align-content: space-evenly;
+		}
+	</style>
+</head>
+<body>
+	<h4>align-content:flex-start</h4>
+	<div class="container1">
+		<div class="item">Item 1</div>
+		<div class="item">Item 2</div>
+		<div class="item">Item 3</div>
+		<div class="item">Item 4</div>
+		<div class="item">Item 5</div>
+		<div class="item">Item 6</div>
+	</div>
+
+	<h4>align-content:center</h4>
+	<div class="container2">
+		<div class="item">Item 1</div>
+		<div class="item">Item 2</div>
+		<div class="item">Item 3</div>
+		<div class="item">Item 4</div>
+		<div class="item">Item 5</div>
+		<div class="item">Item 6</div>
+	</div>
+
+	<h4>align-content:flex-end</h4>
+	<div class="container3">
+		<div class="item">Item 1</div>
+		<div class="item">Item 2</div>
+		<div class="item">Item 3</div>
+		<div class="item">Item 4</div>
+		<div class="item">Item 5</div>
+		<div class="item">Item 6</div>
+	</div>
+
+	<h4>align-content:stretch</h4>
+	<div class="container4">
+		<div class="item">Item 1</div>
+		<div class="item">Item 2</div>
+		<div class="item">Item 3</div>
+		<div class="item">Item 4</div>
+		<div class="item">Item 5</div>
+		<div class="item">Item 6</div>
+	</div>
+
+	<h4>align-content:space-between</h4>
+	<div class="container5">
+		<div class="item">Item 1</div>
+		<div class="item">Item 2</div>
+		<div class="item">Item 3</div>
+		<div class="item">Item 4</div>
+		<div class="item">Item 5</div>
+		<div class="item">Item 6</div>
+	</div>
+
+	<h4>align-content:space-arount</h4>
+	<div class="container6">
+		<div class="item">Item 1</div>
+		<div class="item">Item 2</div>
+		<div class="item">Item 3</div>
+		<div class="item">Item 4</div>
+		<div class="item">Item 5</div>
+		<div class="item">Item 6</div>
+	</div>
+
+	<h4>align-content:space-evenly</h4>
+	<div class="container7">
+		<div class="item">Item 1</div>
+		<div class="item">Item 2</div>
+		<div class="item">Item 3</div>
+		<div class="item">Item 4</div>
+		<div class="item">Item 5</div>
+		<div class="item">Item 6</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flexbox</title>
+
+	<style type="text/css">
+		.item{
+			padding: 15px;
+			background: orange;
+			margin: 15px;
+		}
+		.container1{
+			border: 1px solid red;
+			margin: 15px;
+			padding: 15px;
+
+			display: flex;
+			flex-direction: row;
+		}
+
+		.container2{
+			border: 1px solid red;
+			margin: 15px;
+			padding: 15px;
+
+			display: flex;
+			flex-direction: row-reverse;
+		}
+
+		.container3{
+			border: 1px solid red;
+			margin: 15px;
+			padding: 15px;
+			height: 400px;
+
+			display: flex;
+			flex-direction: column;
+		}
+
+		.container4{
+			border: 1px solid red;
+			margin: 15px;
+			padding: 15px;
+			height: 400px;
+
+			display: flex;
+			flex-direction: column-reverse;
+		}
+		
+	</style>
+</head>
+<body>
+	<h4>flex-direction:row</h4>
+	<div class="container1">
+		<div class="item">Item 1</div>
+		<div class="item">Item 2</div>
+		<div class="item">Item 3</div>
+	</div>
+
+	<h4>flex-direction:row-reverse</h4>
+	<div class="container2">
+		<div class="item">Item 1</div>
+		<div class="item">Item 2</div>
+		<div class="item">Item 3</div>
+	</div>
+
+	<h4>flex-direction:column</h4>
+	<div class="container3">
+		<div class="item">Item 1</div>
+		<div class="item">Item 2</div>
+		<div class="item">Item 3</div>
+	</div>
+
+	<h4>flex-direction:column-reverse</h4>
+	<div class="container4">
+		<div class="item">Item 1</div>
+		<div class="item">Item 2</div>
+		<div class="item">Item 3</div>
+	</div>
+</body>
+</html>

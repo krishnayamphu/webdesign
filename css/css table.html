@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css</title>
+	<style type="text/css">
+	*{
+		font-family: arial;
+	}
+	table{
+		border-collapse: collapse;
+	}
+	table,th,td{
+		border: 1px solid red;
+	}
+
+	.table1 th, .table1 td{
+		border: none;
+		border-bottom:1px solid #ccc;
+		padding: 5px;
+	}
+
+
+	.table2 th, .table2 td{
+		border: none;
+		border-bottom:1px solid #ccc;
+		padding: 5px;
+	}
+	.table2 tr:nth-child(odd){
+		background-color: #ccc;
+	}
+
+
+	/*table3 */
+	.table3 th, .table3 td{
+		border: none;
+		border-bottom:1px solid red;
+		padding: 5px;
+	}
+	.table3 tr:nth-child(odd){
+		background-color: #ccc;
+	}
+	.table3 th:nth-child(odd),.table3 td:nth-child(odd){
+		background-color: #ccc;
+	}
+	</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table>
+<br><br>
+
+<table class="table1">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  <th>Savings</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+  </tr>
+</table>
+
+<br><br>
+
+<table class="table2">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  <th>Savings</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+  </tr>
+</table>
+
+
+
+<br><br>
+
+<table class="table3">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  <th>Savings</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+  </tr>
+</table>
+</body>
+</html>

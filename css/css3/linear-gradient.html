@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css3</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: arial;
+			transition: all 1s;
+		}
+		div{
+			width: 200px;
+			height: 200px;
+			margin: 15px;
+			float: left;
+			border: 1px solid red;
+		}
+		.box1{ background-image: linear-gradient(red,green); }
+		.box2{ background: -moz-linear-gradient(left,red,green); }
+		.box3{ background: -moz-linear-gradient(left top,red,green); }
+		.box4{ background: -moz-linear-gradient(60deg,red,green); }
+		.box5{ background: -moz-linear-gradient(left,red,green,blue,yellow); }
+		.box6{ background: -moz-linear-gradient(left,red,green 50%); }
+		.box7{ background: -moz-linear-gradient(left top,red,green 50%, blue 50%); }
+		.box8{ background: -moz-linear-gradient(left,rgba(255,0,0,1),rgba(0,255,0,0.5)); }
+		.box9{ background: -moz-repeating-linear-gradient(left,red,green 20%); }
+		.box10{ background: -moz-repeating-linear-gradient(left,red,green,blue,yellow 25%); }
+	</style>
+</head>
+<body>
+
+<div class="box1">default</div>
+<div class="box2">left</div>
+<div class="box3">left top</div>
+<div class="box4">60deg</div>
+<div class="box5">more color</div>
+<div class="box6">green 50%</div>
+<div class="box7"></div>
+<div class="box8">opacity</div>
+<div class="box9"></div>
+<div class="box10"></div>
+</body>
+</html>

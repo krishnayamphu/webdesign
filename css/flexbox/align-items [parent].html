@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flexbox</title>
+
+	<style type="text/css">
+		.item{
+			background: orange;
+			padding: 15px;
+		}
+		.item:nth-child(even){
+			background: green;
+		}
+		.container1{
+			border: 1px solid red;
+			margin: 15px;
+			padding: 15px;
+			height: 300px;
+			width: 300px;
+
+			display: flex;
+			align-items: flex-start;
+		}
+
+		.container2{
+			border: 1px solid red;
+			margin: 15px;
+			padding: 15px;
+			height: 300px;
+			width: 300px;
+
+			display: flex;
+			align-items: center;
+		}
+
+		.container3{
+			border: 1px solid red;
+			margin: 15px;
+			padding: 15px;
+			height: 300px;
+			width: 300px;
+
+			display: flex;
+			align-items: flex-end;
+		}
+
+		.container4{
+			border: 1px solid red;
+			margin: 15px;
+			padding: 15px;
+			width: 300px;
+			height: 300px;
+
+			display: flex;
+			align-items: stretch;
+		}
+		.container5{
+			border: 1px solid red;
+			margin: 15px;
+			padding: 15px;
+			width: 300px;
+			height: 300px;
+
+			display: flex;
+			align-items: baseline;
+		}
+	</style>
+</head>
+<body>
+	<h4>align-items:flex-start</h4>
+	<div class="container1">
+		<div class="item">Item 1</div>
+		<div class="item">Item 2</div>
+		<div class="item">Item 3</div>
+	</div>
+
+	<h4>align-items:center</h4>
+	<div class="container2">
+		<div class="item">Item 1</div>
+		<div class="item">Item 2</div>
+		<div class="item">Item 3</div>
+	</div>
+
+	<h4>align-items:flex-end</h4>
+	<div class="container3">
+		<div class="item">Item 1</div>
+		<div class="item">Item 2</div>
+		<div class="item">Item 3</div>
+	</div>
+
+	<h4>align-items:stretch</h4>
+	<div class="container4">
+		<div class="item">Item 1</div>
+		<div class="item">Item 2</div>
+		<div class="item">Item 3</div>
+	</div>
+
+	<h4>align-items:baseline</h4>
+	<div class="container5">
+		<div class="item">Item 1</div>
+		<div class="item">Item 2</div>
+		<div class="item">Item 3</div>
+	</div>
+</body>
+</html>

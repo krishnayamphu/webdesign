@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css3</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: arial;
+			transition: all 1s;
+		}
+		div{
+			width: 200px;
+			height: 200px;
+			margin: 15px;
+			float: left;
+			border: 1px solid red;
+		}
+		.box1{ 
+			background: #2edb70;
+			background: -moz-linear-gradient(45deg,  #2edb70 0%, #f16f5c 50%, #1ca008 51%, #d917ea 71%, #ff2b2b 100%);
+			background: -webkit-linear-gradient(45deg,  #2edb70 0%,#f16f5c 50%,#1ca008 51%,#d917ea 71%,#ff2b2b 100%);
+			background: linear-gradient(45deg,  #2edb70 0%,#f16f5c 50%,#1ca008 51%,#d917ea 71%,#ff2b2b 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2edb70', endColorstr='#ff2b2b',GradientType=1 );
+		}
+		.box2{
+			background: #efc5ca;
+			background: -moz-linear-gradient(45deg,  #efc5ca 0%, #d24b5a 50%, #ba2737 51%, #f18e99 100%);
+			background: -webkit-linear-gradient(45deg,  #efc5ca 0%,#d24b5a 50%,#ba2737 51%,#f18e99 100%);
+			background: linear-gradient(45deg,  #efc5ca 0%,#d24b5a 50%,#ba2737 51%,#f18e99 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efc5ca', endColorstr='#f18e99',GradientType=1 );
+
+			}
+		.box3{ 			
+			background: #efc5ca;
+background: -moz-linear-gradient(left,  #efc5ca 0%, #d24b5a 50%, #ba2737 51%, #f18e99 100%);
+background: -webkit-linear-gradient(left,  #efc5ca 0%,#d24b5a 50%,#ba2737 51%,#f18e99 100%);
+background: linear-gradient(to right,  #efc5ca 0%,#d24b5a 50%,#ba2737 51%,#f18e99 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efc5ca', endColorstr='#f18e99',GradientType=1 );
+}
+		.box4{ 
+		background: rgb(208,228,247);
+background: -moz-radial-gradient(center, ellipse cover,  rgba(208,228,247,1) 0%, rgba(115,177,231,1) 24%, rgba(10,119,213,1) 50%, rgba(83,159,225,1) 79%, rgba(135,188,234,1) 100%);
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(208,228,247,1) 0%,rgba(115,177,231,1) 24%,rgba(10,119,213,1) 50%,rgba(83,159,225,1) 79%,rgba(135,188,234,1) 100%);
+background: radial-gradient(ellipse at center,  rgba(208,228,247,1) 0%,rgba(115,177,231,1) 24%,rgba(10,119,213,1) 50%,rgba(83,159,225,1) 79%,rgba(135,188,234,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=1 );
+ }
+	</style>
+</head>
+<body>
+
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+<div class="box4"></div>
+</body>
+</html>

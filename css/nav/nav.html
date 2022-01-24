@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css</title>
+	<style type="text/css">
+		*{
+			font-family: arial;
+			margin: 0;
+			padding: 0;
+		}
+		nav{
+			background:green;
+			width: 800px;
+			margin: 0 auto;
+		}
+		nav ul{list-style: none;}
+		nav ul li{display: inline-block;}
+		nav ul li a{
+			display: inline-block;
+			color: white;
+			text-decoration: none;
+			padding: 10px 30px;
+		}
+		nav ul li.active a{
+			background-color: orange;
+		}
+		nav ul li:hover a{
+			background-color: orange;
+		}
+
+	</style>
+</head>
+<body>
+<nav>
+	<ul>
+		<li class="active"><a href="#">Home</a></li>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Home</a></li>
+	</ul>
+</nav>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css3</title>
+	<style type="text/css">
+	@keyframes changeBgColor{
+		from{background: red;}
+		to{background: green; border-radius: 50%;}
+	}
+	@keyframes changePosition{
+		0%{
+			left: 0;
+		}
+
+		100%{
+			left: 80%;
+			transform: rotate(360deg);
+			border-radius: 50%;
+		}
+	}
+
+	@keyframes changePic{
+		0%{background-image: url('fish.jpg');}
+		50%{background-image: url('flower.jpg');}
+		100%{background-image: url('penguins.jpg');}
+	}
+
+	@keyframes rotateBox{
+		0%{transform: rotateY(0deg);}
+		100%{transform: rotateY(360deg);}
+	}
+
+	div{
+		margin: 1rem;
+	}
+
+	.box1{
+		width: 200px;
+		height: 200px;
+		border: 1px solid red;
+		animation-name: changeBgColor;
+		animation-duration: 1s;
+		animation-timing-function: ease;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
+	.box2{
+		width: 200px;
+		height: 200px;
+		background: orange;
+		position: relative;
+		animation-name: changePosition;
+		animation-duration: 2s;
+		animation-timing-function: ease;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
+
+	.slide{
+		width: 400px;
+		height: 300px;
+		margin-top: 100px;
+		background: orange;
+		background-size: cover;
+
+		animation-name: changePic;
+		animation-duration: 2s;
+		animation-timing-function: linear;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+
+	}
+
+	.container{
+		width: 300px;
+		margin: 100px auto;
+		perspective: 200px;
+	}
+
+	.rotate360{
+		width: 100px;
+		height: 100px;
+		background-color: green;
+
+		animation-name: rotateBox;
+		animation-duration: 2s;
+		animation-timing-function: linear;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+
+	}
+
+	</style>
+</head>
+<body>
+
+
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="slide"></div>
+
+<div class="container">
+	<div class="rotate360"></div>
+</div>
+
+
+</body>
+</html>

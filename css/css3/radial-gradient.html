@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css3</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: arial;
+			transition: all 1s;
+		}
+		div{
+			width: 200px;
+			height: 200px;
+			margin: 15px;
+			float: left;
+			border: 1px solid red;
+		}
+		.box1{ background-image: radial-gradient(red,green); }
+		.box2{
+			width: 300px; 
+			background: -moz-radial-gradient(red,green); }
+		.box3{ 
+			width: 300px;
+			background: -moz-radial-gradient(circle,red,green); }
+		.box4{ background: -moz-radial-gradient(red,green,blue); }
+		.box5{ background: -moz-radial-gradient(red,green 80%,blue 80%); }
+		.box6{ background: -moz-repeating-radial-gradient(red,green 20%); }
+		.box7{ background: -moz-repeating-radial-gradient(red,green,yellow 25%); }
+		
+	</style>
+</head>
+<body>
+
+<div class="box1">default</div>
+<div class="box2">ovel</div>
+<div class="box3">circle</div>
+<div class="box4">colors</div>
+<div class="box5">green 50%</div>
+<div class="box6">repeating</div>
+<div class="box7">repeating</div>
+</body>
+</html>

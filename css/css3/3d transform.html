@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css3</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: arial;
+			transition: all 1s;
+		}
+		body{perspective: 200px;}
+
+		div{
+			width: 100px;
+			height: 100px;
+			background: green;
+			float: left;
+			margin: 2rem; /*1rem=16px */
+		}
+
+		.translateX:hover{
+			transform: translateX(100px);
+		}
+		.translateY:hover{
+			transform: translateY(100px);
+		}
+		.translateZ:hover{
+			transform: translateZ(-50px);
+		}
+		.translate3d:hover{
+			transform: translate3d(-100px,-100px,100px);
+		}
+		.rotateX:hover{
+			transform: rotateX(360deg);
+		}
+		.rotateY:hover{
+			transform: rotateY(360deg);
+		}
+		.rotateZ:hover{
+			transform: rotateZ(360deg);
+		}
+		.rotate3d:hover{
+			transform: rotate3d(1,0,1,360deg);
+		}
+		.scaleX:hover{
+			transform: scaleX(2);
+		}
+		.scaleY:hover{
+			transform: scaleY(2);
+		}
+		.scaleZ:hover{
+			transform: scaleZ(2);
+		}
+		.scale3d:hover{
+			transform: scale3d(2,2,2);
+		}
+		
+
+	</style>
+</head>
+<body>
+
+<div class="translateX"></div>
+<div class="translateY"></div>
+<div class="translateZ"></div>
+<div class="translate3d"></div>
+
+<div class="rotateX">text</div>
+<div class="rotateY">text</div>
+<div class="rotateZ">text</div>
+<div class="rotate3d">text</div>
+
+<div class="scaleX">scaleX</div>
+<div class="scaleY">scaleY</div>
+<div class="scaleZ">scaleZ</div>
+<div class="scale3d">scale3d</div>
+
+</body>
+</html>

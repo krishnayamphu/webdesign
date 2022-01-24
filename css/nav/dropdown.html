@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css</title>
+	<style type="text/css">
+		*{
+			font-family: arial;
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			list-style: none;
+		}
+		
+		.dropdown{
+			background: green;
+			margin: 50px;
+			display: inline-block;
+		}
+		.dropdown li{
+			position: relative;
+			display: block;
+		}
+		.dropdown li:hover{
+			background: red;
+		}
+		.dropdown li a{
+			color:white;
+			text-decoration: none;
+			display: block;
+			padding: 10px 30px;
+
+		}
+		.dropdown li:hover ul{
+			display: block;
+		}
+		.dropdown ul{
+			display: none;
+			background: #ccc;
+			position: absolute;
+			width: 133px;
+			top:35.3px;
+			left: 0;
+		}
+		.dropdown ul li a{
+			display: block;
+			padding: 5px 10px;
+			color:#222;
+		}
+		.dropdown ul li a:hover{
+			background-color: orange;
+			color:white;
+		}
+	</style>
+</head>
+<body>
+
+<ul class="dropdown">
+	<li>
+		<a href="#">Dropdown</a>
+		<ul>
+			<li><a href="#">dropdown link</a></li>
+			<li><a href="#">dropdown link</a></li>
+			<li><a href="#">dropdown link</a></li>
+		</ul>
+	</li>
+</ul>
+
+</body>
+</html>

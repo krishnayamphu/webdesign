@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css</title>
+	<style type="text/css">
+		*{
+			font-family: arial;
+			margin: 0;
+			padding: 0;
+		}
+		nav{
+			background:green;
+			width: 800px;
+			margin: 0 auto;
+		}
+		nav ul{list-style: none;}
+		nav ul li{
+			display: inline-block;
+			position: relative;
+		}
+		nav ul li a{
+			display: inline-block;
+			color: white;
+			text-decoration: none;
+			padding: 10px 30px;
+		}
+		nav ul li.active a{
+			background-color: orange;
+		}
+		nav ul li:hover a{
+			background-color: orange;
+		}
+		nav ul ul{
+			position: absolute;
+			top:38px;
+			display: none;
+		}
+		nav ul ul a{
+			background: #ccc;
+			width: 200px;
+			color:black;
+		}
+		nav ul li:hover ul{
+			display: block;
+		}
+		nav ul li:hover ul a{
+			background: #ccc;
+		}
+		nav ul ul li:hover a{
+			background: red;
+			color:white;
+		}
+
+
+	</style>
+</head>
+<body>
+<nav>
+	<ul>
+		<li class="active"><a href="#">Home</a></li>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Services</a>
+			<ul>
+				<li><a href="#">Services 1</a></li>
+				<li><a href="#">Services 2</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Home</a></li>
+	</ul>
+</nav>
+</body>
+</html>

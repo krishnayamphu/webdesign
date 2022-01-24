@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flexbox</title>
+
+	<style type="text/css">
+		.container1{
+			border: 1px solid red;
+			display: flex;
+		}
+		.container1 .item{
+			background-color: orange;
+			padding: 5px 15px;
+		}
+		.container1 .item:nth-child(even){
+			background-color: green;
+			flex-basis: 200px;
+		}
+
+		.container2{
+			border: 1px solid red;
+			display: flex;
+		}
+
+		.container2 .item{
+			background-color: orange;
+			padding: 5px 15px;
+			flex-grow: 1;
+		}
+		.container2 .item:nth-child(even){
+			background-color: green;
+			flex-basis: 100px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<h4>flex-basis:200px</h4>
+	<div class="container1">
+		<div class="item">Item 1</div>
+		<div class="item">Item 2</div>
+		<div class="item">Item 3</div>
+	</div>
+
+	<h4>flex-basis:100px</h4>
+	<div class="container2">
+		<div class="item">Item 1</div>
+		<div class="item">Item 2</div>
+		<div class="item">Item 3</div>
+	</div>
+</body>
+</html>
