@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	/*
+		Number(),parseInt(),parseFloat(),eval()
+	*/
+
+
+document.write(Number(true) + "<br>");
+document.write(Number(false) + "<br>");
+document.write(Number("10") + "<br>");
+document.write(Number(" 10") + "<br>");
+document.write(Number("10 ") + "<br>");
+document.write(Number(" 10 ") + "<br>");
+document.write(Number("10.55") + "<br>");
+document.write(Number("10,55") + "<br>");
+document.write(Number("10 55") + "<br>");
+document.write(Number("text") + "<br>");
+
+document.write("<hr>");
+document.write(parseInt("-10") + "<br>");
+document.write(parseInt("-10.55") + "<br>");
+document.write(parseInt("10") + "<br>");
+document.write(parseInt("10.55") + "<br>");
+document.write(parseInt("10 20 30") + "<br>");
+document.write(parseInt("10 years") + "<br>");
+document.write(parseInt("years 10") + "<br>");
+
+document.write("<hr>");
+document.write(parseFloat("-10") + "<br>");
+document.write(parseFloat("-10.55") + "<br>");
+document.write(parseFloat("10") + "<br>");
+document.write(parseFloat("10.55") + "<br>");
+document.write(parseFloat("10 20 30") + "<br>");
+document.write(parseFloat("10 years") + "<br>");
+document.write(parseFloat("years 10") + "<br>");
+
+document.write("<hr>");
+document.write(eval("10+5") + "<br>");
+document.write(eval("10+5-2*3") + "<br>");
+document.write(eval("10+(5-2)*3") + "<br>");
+document.write(eval("10+5-2*3+text") + "<br>");
+
+
+</script>
+</body>
+</html>

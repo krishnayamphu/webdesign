@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>js</title>
+</head>
+<body>
+	<form name="frm">
+		<input type="number" name="n1" placeholder="number 1"><br><br>
+		<input type="number" name="n2" placeholder="number 2"><br><br>
+		<input type="text" name="re" placeholder="result"><br><br>
+		<button type="button" onclick="addition()"> + </button>
+		<button type="button" onclick="substraction()"> - </button>
+		<button type="button" onclick="clearData()"> AC </button>
+	</form>
+<script type="text/javascript">
+
+function addition() {
+	var f=document.forms['frm'];
+	var n1=Number(f.n1.value);
+	var n2=Number(f.n2.value);
+
+	var sum=n1+n2;
+	f.re.value=sum;
+}
+
+function substraction() {
+	var f=document.forms['frm'];
+	var n1=Number(f.n1.value);
+	var n2=Number(f.n2.value);
+
+	var sb=n1-n2;
+	f.re.value=sb;
+}
+
+function clearData() {
+	var f=document.forms['frm'];
+	f.n1.value="";
+	f.n2.value="";
+	f.re.value="";
+}
+</script>
+
+</body>
+</html>
