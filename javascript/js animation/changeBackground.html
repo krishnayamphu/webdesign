@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+/* 
+setInterval(function_name,time);
+1s=1000ms
+ */
+var i=0;
+function changeBg() {
+	let color=["red","green","blue","yellow"];
+	document.bgColor=color[i];
+	i++;
+	if(i==4){
+		i=0;
+	}
+}
+setInterval("changeBg();",1000)
+
+</script>
+</body>
+</html>
