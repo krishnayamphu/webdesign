@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS</title>
+</head>
+<body>
+<script type="text/javascript">
+
+/*
+Object:
+
+#method 1:
+var objName={name:value,name:value};
+
+e.i:
+var person={name:"Ram",age:40};
+
+#method 2:
+var objname=new ObjectName();
+objname.property=value;
+
+e.i.:
+var person=new Object();
+person.name="Ram";
+
+
+Accessing JavaScript Properties:
+#1 objectName.property      // person.age
+#2 objectName["property"]   // person["age"]
+#3 objectName[expression]   // x = "age"; person[x]
+
+Accessing Object Methods:
+objectName.methodName()
+
+*/
+
+
+var person={
+	name:"Ram",
+	age:40,
+	info:function() { //method
+		document.write("Person Name: "+person.name);
+		document.write("<br>Person Age: "+person.age);
+	}
+};
+
+// document.write("Person Name: "+person.name);
+// document.write("<br>Person Age: "+person.age);
+
+person.info();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+var date=new Date();
+
+document.write(date);
+
+var y=date.getFullYear();
+var mo=date.getMonth()+1;
+var d=date.getDate();
+var dd=date.getDay()+1;
+
+var h=date.getHours();
+var mi=date.getMinutes();
+var s=date.getSeconds();
+var ms=date.getMilliseconds();
+
+document.write("<br>"+y+"-"+mo+"-"+d+" "+dd);
+document.write("<hr>"+h+":"+mi+":"+s+":"+ms);
+
+</script>
+</body>
+</html>
