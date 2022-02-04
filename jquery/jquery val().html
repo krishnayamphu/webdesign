@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery</title>
+</head>
+<body>
+
+<form>
+	<input type="text" id="name" value="admin"><br>
+	<input type="number" id="age">
+	<button type="button" id="btn1">Show</button>
+</form>
+
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+	//val() - Sets or returns the value of form fields
+	
+	$("#btn1").click(function(){
+		var name=$("#name").val();
+		$("#age").val(40);
+		alert("Your name is: "+name);
+	});
+	
+
+});
+</script>
+
+</body>
+</html>
