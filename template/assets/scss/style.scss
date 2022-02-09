@@ -1,20 +1,15 @@
-@charset "UTF-8";
-
-:root{
-    --primary-color: #de6226;
-    --secondary-color:#414c52;
-    --accent-color:#de6226;
-}
+@import "variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 .site-header{
-    background-color: var(--secondary-color);
+    background-color: $secondary-color;
 }
 .brand-logo{
     font-size: 38px;
     font-weight: bold;
     line-height: 44px;
     padding: 15px;
-    background-color: var(--primary-color);
+    background-color: $primary-color;
 }
 .brand-logo span{
     display: block;
@@ -28,7 +23,7 @@
     text-transform: uppercase;
 }
 .navbar-nav .nav-link.active{
-    color: var(--primary-color) !important;
+    color: $primary-color !important;
 }
 
 .social-links a{
@@ -50,7 +45,7 @@
     padding: 60px 0;
 }
 #client-success .icon-holder{
-    background-color: var(--secondary-color);
+    background-color: $secondary-color;
     width: 100px;
     height: 100px;
     display: flex;
@@ -62,3 +57,5 @@
     font-size: 40px;
     color: white;
 }
+
+
