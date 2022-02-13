@@ -45,7 +45,7 @@
     padding: 60px 0;
 }
 #client-success .icon-holder{
-    background-color: $secondary-color;
+    background-color: $primary-color;
     width: 100px;
     height: 100px;
     display: flex;
@@ -53,9 +53,31 @@
     justify-content: center;
     border-radius: 50%;
 }
+#client-success .card:hover .icon-holder{
+    background-color: $secondary-color;
+    transition:all 0.3s;
+}
 #client-success .icon-holder>i{
     font-size: 40px;
     color: white;
+}
+
+#wise-investment{
+    background-color:$color1;
+    padding:60px 0;
+    img{
+        height:220px;
+        object-fit:cover;
+    }
+}
+
+#investment-money{
+    .card-height{
+        height:400px;
+    }
+    .offset-top{
+    top:-400px;
+    }
 }
 
 
