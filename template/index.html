@@ -27,7 +27,7 @@
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -50,7 +50,7 @@
           </ul>
 
           <!-- right nav-icons-links -->
-          <ul class="nav justify-content-end social-links">
+          <ul class="nav social-links">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#">
                 <i class="fab fa-twitter-square"></i>
@@ -331,6 +331,7 @@
                 <div class="mb-3">
                   <textarea class="form-control bg-transparent text-white" rows="5" placeholder="Message"></textarea>
                 </div>
+                <button class="btn btn-primary float-right rounded-0">Send</button>
               </div>
             </div>
           </form>
@@ -349,17 +350,17 @@
               <div class="col mb-3">
                 <div class="d-flex align-items-center">
                   <div class="icon-holder">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-envelope"></i>
                   </div>
-                  <p>Kumaripati, Lalitpur <br> Nepal</p>
+                  <p>info@companyname.com</p>
                 </div>
               </div>
               <div class="col mb-3">
                 <div class="d-flex align-items-center">
                   <div class="icon-holder">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-phone"></i>
                   </div>
-                  <p>Kumaripati, Lalitpur <br> Nepal</p>
+                  <p>+977 01-1234567</p>
                 </div>
               </div>
             </div>
@@ -367,9 +368,38 @@
         </div>
       </div>
     </section>
-
-
   </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-lg-2">
+        <div class="col mb-4">
+          <div class="d-flex align-items-end">
+            <h2 class="text-white text-uppercase pr-1 m-0">Haber</h2>
+            <span class="text-white">&copy;2022, <a href="#!" class="text-white">Privacy policy</a></span>
+          </div>
+
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col mb-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14134.049835783911!2d85.320298!3d27.670552!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9dbbf0d3224cf118!2sAptech%20Computer%20Education%20lalitpur!5e0!3m2!1sen!2snp!4v1645001134280!5m2!1sen!2snp"
+            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- <img src="assets/images/haber.jpg"> -->
   <script src="assets/js/app.min.js"></script>
@@ -381,8 +411,26 @@
       $('.brand-showcase').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
+        centerMode: true,
+        centerPadding: '60px',
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
       });
     });
   </script>
