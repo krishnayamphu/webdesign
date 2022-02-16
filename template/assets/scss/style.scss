@@ -1,17 +1,17 @@
 @import "variables";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-.site-header{
+.site-header {
     background-color: $secondary-color;
 }
-.brand-logo{
+.brand-logo {
     font-size: 38px;
     font-weight: bold;
     line-height: 44px;
     padding: 15px;
     background-color: $primary-color;
 }
-.brand-logo span{
+.brand-logo span {
     display: block;
     font-size: 10px;
     text-transform: uppercase;
@@ -19,32 +19,32 @@
     line-height: 0;
 }
 
-.navbar-nav .nav-link{
+.navbar-nav .nav-link {
     text-transform: uppercase;
 }
-.navbar-nav .nav-link.active{
+.navbar-nav .nav-link.active {
     color: $primary-color !important;
 }
 
-.social-links a{
-    color: rgba(255,255,255,.55) !important;
+.social-links a {
+    color: rgba(255, 255, 255, 0.55) !important;
 }
-.slideshow{
+.slideshow {
     width: 100%;
     height: 500px;
     overflow: hidden;
 }
-.slideshow img{
+.slideshow img {
     max-width: 100%;
     max-height: 500px;
     height: 100%;
     object-fit: cover;
 }
 
-#client-success{
+#client-success {
     padding: 60px 0;
 }
-#client-success .icon-holder{
+#client-success .icon-holder {
     background-color: $primary-color;
     width: 100px;
     height: 100px;
@@ -53,31 +53,73 @@
     justify-content: center;
     border-radius: 50%;
 }
-#client-success .card:hover .icon-holder{
+#client-success .card:hover .icon-holder {
     background-color: $secondary-color;
-    transition:all 0.3s;
+    transition: all 0.3s;
 }
-#client-success .icon-holder>i{
+#client-success .icon-holder > i {
     font-size: 40px;
     color: white;
 }
 
-#wise-investment{
-    background-color:$color1;
-    padding:60px 0;
-    img{
-        height:220px;
-        object-fit:cover;
+#wise-investment {
+    background-color: $color1;
+    padding: 60px 0;
+    img {
+        height: 220px;
+        object-fit: cover;
     }
 }
 
-#investment-money{
-    .card-height{
-        height:400px;
+#investment-money {
+    position: relative;
+    .card-height {
+        height: 280px;
     }
-    .offset-top{
-    top:-400px;
+    .top-0{
+        top:0;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
+#brand-show {
+    .brand-showcase {
+        img {
+            width: 150px;
+            height: 120px;
+        }
+    }
+}
 
+#contact {
+    background: url("../images/msit.jpg") no-repeat;
+    display: flex;
+
+    .contact-overlay {
+        padding-top: 60px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        flex-grow: 1;
+    }
+    .contact-address {
+        padding: 60px 0;
+
+        .icon-holder {
+            width: 70px;
+            height: 70px;
+            background: $primary-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            border: 5px solid #ccc;
+            margin-right: 15px;
+            i {
+                font-size: 30px;
+                color: white;
+            }
+        }
+    }
+}
