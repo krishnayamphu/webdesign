@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      div {
+        border: 1px solid green;
+        padding: 15px;
+        width: 200px;
+        height: 150px;
+        margin: 15px;
+        float: left;
+      }
+      div p {
+        color: red;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5;
+      }
+
+      .visible {
+        overflow: visible;
+      }
+      .hidden {
+        overflow: hidden;
+      }
+      .scroll {
+        overflow: scroll;
+      }
+
+      img {
+        width: 300px;
+      }
+
+      .hidden-x {
+        overflow-x: hidden;
+      }
+      .hidden-y {
+        overflow-y: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="visible">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+        recusandae dolorem reprehenderit saepe ratione temporibus nemo minus
+        debitis non ullam quisquam maxime sapiente iusto, quibusdam molestiae
+        consectetur. Mollitia, a reprehenderit!
+      </p>
+    </div>
+
+    <div class="hidden">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+        recusandae dolorem reprehenderit saepe ratione temporibus nemo minus
+        debitis non ullam quisquam maxime sapiente iusto, quibusdam molestiae
+        consectetur. Mollitia, a reprehenderit!
+      </p>
+    </div>
+
+    <div class="scroll">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+        recusandae dolorem reprehenderit saepe ratione temporibus nemo minus
+        debitis non ullam quisquam maxime sapiente iusto, quibusdam molestiae
+        consectetur. Mollitia, a reprehenderit!
+      </p>
+    </div>
+
+    <div>
+      <img src="background.jpg" alt="" />
+    </div>
+
+    <div class="hidden">
+      <img src="background.jpg" alt="" />
+    </div>
+
+    <div class="hidden-x">
+      <img src="background.jpg" alt="" />
+    </div>
+
+    <div class="hidden-y">
+      <img src="background.jpg" alt="" />
+    </div>
+  </body>
+</html>
