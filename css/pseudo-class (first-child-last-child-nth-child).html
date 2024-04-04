@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      p:first-child {
+        color: red;
+      }
+
+      p:last-child {
+        color: blue;
+      }
+      p:nth-child(3) {
+        color: green;
+      }
+      ul li:nth-child(odd) {
+        color: red;
+      }
+      ul li:nth-child(even) {
+        color: yellow;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+    <p>Paragraph 4</p>
+
+    <ul>
+      <li>List 1</li>
+      <li>List 2</li>
+      <li>List 3</li>
+      <li>List 4</li>
+    </ul>
+  </body>
+</html>

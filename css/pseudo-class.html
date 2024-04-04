@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      a:link {
+        color: teal;
+      }
+
+      a:visited {
+        color: grey;
+      }
+      a:hover {
+        color: red;
+        cursor: default;
+        text-decoration: none;
+        background-color: black;
+      }
+      a:active {
+        color: green;
+      }
+
+      .box1 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+      .box1:hover {
+        background-color: blue;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px black;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#1">Link 1</a>
+    <a href="#2">Link 2</a>
+    <a href="#3">Link 3</a>
+    <a href="#4">Link 4</a>
+
+    <div class="box1"></div>
+  </body>
+</html>
