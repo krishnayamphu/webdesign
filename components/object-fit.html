@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      img {
+        width: 300px;
+        height: 500px;
+        border: 5px green solid;
+      }
+      .cover {
+        object-fit: cover;
+      }
+      .contain {
+        object-fit: contain;
+      }
+
+      .top {
+        object-position: top;
+      }
+      .bottom {
+        object-position: bottom;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="../css/background.jpg" alt="" />
+    <img class="cover" src="../css/background.jpg" alt="" />
+    <img class="contain" src="../css/background.jpg" alt="" />
+    <img class="contain top" src="../css/background.jpg" alt="" />
+    <img class="contain bottom" src="../css/background.jpg" alt="" />
+  </body>
+</html>
