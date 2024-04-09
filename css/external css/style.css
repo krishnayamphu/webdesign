@@ -1,0 +1,10 @@
+body {
+  background-color: aqua;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  text-decoration: underline;
+}
+p {
+  color: darkred;
+}
