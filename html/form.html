@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html</title>
+    <style>
+      input {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type="checkbox"],
+      input[type="radio"] {
+        display: inline-block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="">
+      <label for="name">Text</label>
+      <input type="text" id="name" required />
+
+      <input type="number" placeholder="enter number" required />
+      <input type="email" placeholder="example@email.com" />
+      <input type="password" placeholder="password" />
+      <input type="search" />
+
+      <input type="checkbox" value="ckb1" checked />Checkbox 1
+      <input type="checkbox" value="ckb2" />Checkbox 2
+      <input type="radio" name="gender" value="m" checked />Male
+      <input type="radio" name="gender" value="f" />Female
+
+      <input type="range" min="0" max="100" />
+      <input type="color" min="0" max="100" />
+      <input type="file" />
+      <input type="date" />
+      <input type="datetime-local" />
+      <input type="file" name="" />
+
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="textarea"
+      ></textarea>
+      <br />
+      <select>
+        <option value="option1">option1</option>
+        <option value="option1">option1</option>
+        <option value="option1">option1</option>
+        <option value="option1">option1</option>
+      </select>
+      <br />
+
+      <input type="button" value="button" />
+      <button type="submit">Submit</button>
+      <button type="submit">Reset</button>
+    </form>
+  </body>
+</html>
