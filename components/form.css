@@ -1,0 +1,75 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  width: 70%;
+  margin: 15px auto;
+  overflow: hidden;
+  box-shadow: 0 0 5px #ccc;
+  border-radius: 25px;
+}
+.col {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+.login-form {
+  margin-top: 60px;
+  padding: 30px 60px;
+}
+.login-form h3 {
+  text-transform: uppercase;
+}
+
+.input-group {
+  background-color: rgb(222, 178, 223);
+  margin: 10px;
+  border-radius: 15px;
+  padding: 10px 5px;
+}
+input {
+  width: 85%;
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+}
+input:focus {
+  outline: none;
+}
+
+button {
+  border-radius: 10px;
+  padding: 10px 15px;
+  border: none;
+  background-color: blueviolet;
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.login-others {
+  padding: 15px 0;
+  text-align: center;
+}
+
+.login-form a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border: 1px solid #ccc;
+  margin: 8px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.bg-image {
+  background-color: red;
+  background-image: url(images/bg.jpg);
+  background-size: cover;
+  height: 500px;
+}
