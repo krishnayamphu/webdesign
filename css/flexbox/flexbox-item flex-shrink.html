@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .row {
+        border: 1px solid red;
+        margin: 15px 30px;
+        display: flex;
+        width: 400px;
+      }
+      .col {
+        background-color: green;
+        width: 200px;
+      }
+
+      .col:nth-child(even) {
+        background-color: orange;
+      }
+      .col:last-child {
+        background-color: rgb(178, 67, 184);
+      }
+      .shrink-0 {
+        flex-grow: 0;
+      }
+      .shrink-1 {
+        flex-shrink: 1;
+      }
+      .shrink-2 {
+       flex-shrink: 2;
+      }
+      .shrink-3 {
+       flex-shrink:3
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col">col1</div>
+      <div class="col">col2</div>
+      <div class="col">col3</div>
+    </div>
+
+    <div class="row">
+      <div class="col shrink-2">col1</div>
+      <div class="col">col2</div>
+      <div class="col">col3</div>
+    </div>
+
+    <div class="row">
+      <div class="col shrink-0">col1</div>
+      <div class="col shrink-2">col2</div>
+      <div class="col shrink-3">col3</div>
+    </div>
+
+    <div class="row">
+      <div class="col grow-1">col1</div>
+      <div class="col grow-2">col2</div>
+      <div class="col col grow-1">col3</div>
+    </div>
+
+    <div class="row">
+      <div class="col grow-1">col1</div>
+      <div class="col grow-3">col2</div>
+      <div class="col grow-1">col3</div>
+    </div>
+</div>
+    </div>
+  </body>
+</html>
