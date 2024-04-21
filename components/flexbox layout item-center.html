@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      section {
+        display: flex;
+        background-color: aqua;
+        background-image: url(images/bg.jpg);
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+      }
+      section h1 {
+        color: white;
+        font-size: 60px;
+      }
+      section a {
+        display: inline-block;
+        text-align: center;
+        background-color: #b06300;
+        padding: 10px 15px;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+      }
+      .container {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1>Let's Get Started</h1>
+        <a href="#">Read More</a>
+      </div>
+    </section>
+  </body>
+</html>

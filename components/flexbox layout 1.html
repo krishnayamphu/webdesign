@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .row {
+        margin: 15px 30px;
+        display: flex;
+      }
+      .col {
+        padding: 5px;
+        flex-grow: 1;
+      }
+      .card {
+        box-shadow: 0 0 2px #ccc;
+        padding: 15px;
+      }
+      .card .card-icon {
+        background-color: rgb(19, 51, 207);
+        color: white;
+        padding: 20px;
+        display: inline-block;
+        font-size: 24px;
+        border-radius: 10px;
+      }
+      .card .card-title {
+        margin: 15px 0;
+      }
+      .card .card-text {
+        color: rgb(91, 91, 91);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <span class="card-icon">
+            <i class="fa-solid fa-home"></i>
+          </span>
+          <h3 class="card-title">Featured title</h3>
+          <p class="card-text">
+            Paragraph of text beneath the heading to explain the heading. We'll
+            add onto it with another sentence and probably just keep going until
+            we run out of words.
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <span class="card-icon">
+            <i class="fa-solid fa-home"></i>
+          </span>
+          <h3 class="card-title">Featured title</h3>
+          <p class="card-text">
+            Paragraph of text beneath the heading to explain the heading. We'll
+            add onto it with another sentence and probably just keep going until
+            we run out of words.
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <span class="card-icon">
+            <i class="fa-solid fa-home"></i>
+          </span>
+          <h3 class="card-title">Featured title</h3>
+          <p class="card-text">
+            Paragraph of text beneath the heading to explain the heading. We'll
+            add onto it with another sentence and probably just keep going until
+            we run out of words.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
