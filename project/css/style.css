@@ -1,0 +1,38 @@
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/hero-bg.jpg);
+  background-size: cover;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: var(--bs-yellow);
+}
+
+.intro-wrapper {
+  height: calc(100vh - 56px);
+}
+
+#intro h1 {
+  font-size: 56px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.showcase-box {
+  border: 1px solid #ccc;
+  padding: 30px 20px;
+}
+.showcase-box:hover {
+  border-color: var(--bs-yellow);
+}
+.showcase-box i {
+  color: var(--bs-yellow);
+  font-size: 56px;
+}
