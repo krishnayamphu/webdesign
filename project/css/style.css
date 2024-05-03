@@ -99,3 +99,30 @@ header {
   border-color: var(--bs-yellow);
   color: black;
 }
+#testimonials {
+  background-color: aquamarine;
+  background-image: url(../images/hero-bg.jpg);
+}
+#carouselExampleCaptions img {
+  width: 100%;
+  max-width: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 10px solid rgba(0, 0, 0, 0.23);
+}
+#carouselExampleCaptions .carousel-caption {
+  position: relative;
+  left: 0;
+  right: 0;
+}
+#carouselExampleCaptions .carousel-caption p {
+  font-style: italic;
+  font-size: 22px;
+}
+#carouselExampleCaptions .carousel-caption i {
+  font-size: 28px;
+  margin: 10px;
+}
+.carousel-indicators button.active {
+  background-color: var(--bs-yellow) !important;
+}
