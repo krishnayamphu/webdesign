@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js</title>
+  </head>
+  <body>
+    <input type="text" id="clock" />
+    <button onclick="stopClock()">Stop</button>
+    <script>
+      const myInterval = setInterval("myClock()", 10);
+
+      function myClock() {
+        const date = new Date();
+        let d = date.getDay() + 1; //0-6
+        let da = date.getDate();
+        let mo = date.getMonth() + 1; //0-11
+        let y = date.getFullYear();
+
+        let h = date.getHours(); //24hrs
+        if (h > 12) {
+          h = h - 12;
+        }
+        let mi = date.getMinutes(); //0-59
+        let s = date.getSeconds();
+        let ms = date.getMilliseconds(); //0-999
+
+        let time = h + " : " + mi + " : " + s + " : " + ms;
+        document.getElementById("clock").value = time;
+      }
+
+      function stopClock() {
+        clearInterval(myInterval);
+      }
+    </script>
+  </body>
+</html>
