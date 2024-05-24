@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js</title>
+    <style>
+      .slider {
+        border: 2px solid grey;
+        display: inline-block;
+        margin: 15px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .slider img {
+        height: 300px;
+        width: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider">
+      <img id="myPic" src="team-1.jpg" alt="" />
+    </div>
+    <script>
+      let i = 0;
+      function slideShow() {
+        const photo = ["team-1.jpg", "team-2.jpg", "team-3.jpg"];
+        document.getElementById("myPic").src = photo[i];
+        i++;
+        if (i == photo.length) {
+          i = 0;
+        }
+      }
+      setInterval("slideShow()", 1000);
+    </script>
+  </body>
+</html>
