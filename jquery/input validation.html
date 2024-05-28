@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      form {
+        padding: 15px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input {
+        border: none;
+        border-radius: 2px;
+        padding: 5px;
+        outline: 1px solid black;
+      }
+      .error {
+        outline: 1px solid red;
+      }
+      .success {
+        outline: 1px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="tname">Enter name</label>
+      <input type="text" id="tname" />
+      <p id="err"></p>
+    </form>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+      $(function () {
+        $("#tname").on("input", function () {
+          let len = $("#tname").val().length;
+          if (len <= 3 || len > 20) {
+            $("#tname").removeClass("success");
+            $("#tname").addClass("error");
+          } else {
+            $("#tname").removeClass("error");
+            $("#tname").addClass("success");
+          }
+
+          $("#err").text(len);
+        });
+      });
+    </script>
+  </body>
+</html>
