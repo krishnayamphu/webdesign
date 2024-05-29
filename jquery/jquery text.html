@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn1">Get Text</button>
+    <button id="btn2">Set Text</button>
+    <p>Welcome to jquery</p>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+      $(function () {
+        $("#btn1").click(function () {
+          let data = $("p").text();
+          alert(data);
+        });
+
+        $("#btn2").click(function () {
+          let data = "Hello World";
+          $("p").text(data);
+        });
+      });
+    </script>
+  </body>
+</html>

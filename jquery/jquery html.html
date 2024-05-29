@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn1">Get Html</button>
+    <button id="btn2">Set Html</button>
+    <p>
+      Lorem <strong>ipsum dolor</strong> sit amet consectetur adipisicing elit.
+    </p>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+      $(function () {
+        $("#btn1").click(function () {
+          let data = $("p").html();
+          alert(data);
+        });
+
+        $("#btn2").click(function () {
+          let data = "<em>Hello World</em>";
+          $("p").html(data);
+        });
+      });
+    </script>
+  </body>
+</html>
