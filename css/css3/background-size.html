@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      div {
+        width: 600px;
+        height: 300px;
+        margin: 15px auto;
+        background-color: pink;
+        background-image: url(bg.jpg);
+        border: 5px solid red;
+        background-repeat: no-repeat;
+      }
+      .box1 {
+        background-size: cover;
+      }
+      .box2 {
+        background-size: contain;
+      }
+      .box3 {
+        background-size: 100% 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>box</div>
+    <div class="box1">box</div>
+    <div class="box2">box</div>
+    <div class="box3">box</div>
+  </body>
+</html>
