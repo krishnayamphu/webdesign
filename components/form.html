@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      form {
+        background-color: bisque;
+        width: 300px;
+        margin: 30px auto;
+        padding: 15px;
+        border-radius: 5px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+      }
+      input:focus {
+        outline: none;
+        border: 1px solid green;
+        color: green;
+      }
+      input::placeholder {
+        color: rgb(186, 228, 186);
+      }
+      input[type="checkbox"] {
+        display: inline-block;
+        width: auto;
+        margin-right: 5px;
+        accent-color: green;
+      }
+      button {
+        display: block;
+        padding: 2px 15px;
+        background-color: green;
+        border: none;
+        color: white;
+        border-radius: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Enter username" />
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter password" />
+      <input type="checkbox" />Remember Me
+      <button>Login</button>
+    </form>
+  </body>
+</html>
