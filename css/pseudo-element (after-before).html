@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      h1::before {
+        content: open-quote;
+      }
+      h1::after {
+        content: close-quote;
+      }
+      h2 {
+        padding: 0 10px;
+      }
+      h2::after {
+        content: "♠♠♠";
+      }
+      h2::before {
+        content: "♠♠♠";
+      }
+      p::after {
+        content: url("twitter.png");
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+      architecto voluptate illo voluptas distinctio provident. Itaque minus
+      recusandae aliquam? Iste, fuga. Consectetur reprehenderit fugit impedit
+      illum enim nostrum facere fuga?
+    </p>
+
+    <h2>Welcome to css</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+      architecto voluptate illo voluptas distinctio provident. Itaque minus
+      recusandae aliquam? Iste, fuga. Consectetur reprehenderit fugit impedit
+      illum enim nostrum facere fuga?
+    </p>
+  </body>
+</html>
