@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      .box1 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transition-property: all;
+        transition-duration: 1s;
+        transition-timing-function: ease;
+      }
+      .box1:hover {
+        background-color: blue;
+        border-radius: 25px;
+        width: 300px;
+      }
+
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        transition: all 1s ease 0s;
+        background-color: pink;
+      }
+      h1:hover {
+        font-size: 60px;
+        color: blue;
+      }
+
+      img {
+        width: 200px;
+        opacity: 0.5;
+        border-radius: 10px;
+        transition: all 0.5s;
+      }
+      img:hover {
+        opacity: 1;
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.69);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <h1>Hello World</h1>
+
+    <img src="cat.PNG" alt="" />
+  </body>
+</html>
