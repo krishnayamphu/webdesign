@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fontawesome</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .text-success {
+        color: green;
+      }
+      .text-danger {
+        color: rgb(184, 34, 34);
+      }
+      .big-size {
+        font-size: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <i class="fa-solid fa-house"></i>
+    <i class="fa-solid fa-user"></i>
+    <i class="fa-solid fa-phone"></i>
+
+    <hr />
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-twitter"></i>
+
+    <h4>Styling Basics</h4>
+    <i class="fa-solid fa-house"></i>
+    <i class="fa-solid fa-house text-success"></i>
+    <i class="fa-solid fa-house text-danger"></i>
+
+    <h4>Icon Sizing</h4>
+    <i class="fa-solid fa-house fa-2xs"></i>
+    <i class="fa-solid fa-house fa-xs"></i>
+    <i class="fa-solid fa-house fa-sm"></i>
+    <i class="fa-solid fa-house text-success"></i>
+    <i class="fa-solid fa-house fa-lg"></i>
+    <i class="fa-solid fa-house fa-xl"></i>
+    <i class="fa-solid fa-house fa-2xl"></i>
+
+    <i class="fa-solid fa-house big-size"></i>
+
+    <h4>Fixed width Icons</h4>
+    <!-- vertically aligning icons -->
+    <div style="font-size: 2rem">
+      <div>
+        <i class="fa-solid fa-skating fa-fw" style="background: DodgerBlue"></i>
+        Skating
+      </div>
+      <div>
+        <i class="fa-solid fa-skiing fa-fw" style="background: SkyBlue"></i>
+        Skiing
+      </div>
+      <div>
+        <i
+          class="fa-solid fa-skiing-nordic fa-fw"
+          style="background: DodgerBlue"
+        ></i>
+        Nordic Skiing
+      </div>
+      <div>
+        <i
+          class="fa-solid fa-snowboarding fa-fw"
+          style="background: SkyBlue"
+        ></i>
+        Snowboarding
+      </div>
+      <div>
+        <i
+          class="fa-solid fa-snowplow fa-fw"
+          style="background: DodgerBlue"
+        ></i>
+        Snowplow
+      </div>
+    </div>
+
+    <h4>Icons in list</h4>
+    <ul class="fa-ul">
+      <li>
+        <span class="fa-li"><i class="fa-solid fa-check-square"></i></span>List
+        icons can
+      </li>
+      <li>
+        <span class="fa-li"><i class="fa-solid fa-check-square"></i></span>be
+        used to
+      </li>
+      <li>
+        <span class="fa-li"><i class="fa-solid fa-spinner fa-pulse"></i></span
+        >replace bullets
+      </li>
+      <li>
+        <span class="fa-li"><i class="fa-regular fa-square"></i></span>in lists
+      </li>
+    </ul>
+
+    <h4>Rotate Icons</h4>
+    <div class="fa-3x">
+      <i class="fa-solid fa-snowboarding"></i>
+      <i class="fa-solid fa-snowboarding fa-rotate-90"></i>
+      <i class="fa-solid fa-snowboarding fa-rotate-180"></i>
+      <i class="fa-solid fa-snowboarding fa-rotate-270"></i>
+      <i class="fa-solid fa-snowboarding fa-flip-horizontal"></i>
+      <i class="fa-solid fa-snowboarding fa-flip-vertical"></i>
+      <i class="fa-solid fa-snowboarding fa-flip-both"></i>
+    </div>
+
+    <h4>Animation Icon</h4>
+    <div class="fa-3x">
+      <i class="fa-solid fa-circle-plus fa-beat"></i>
+      <i class="fa-solid fa-heart fa-beat"></i>
+      <i
+        class="fa-solid fa-heart fa-beat"
+        style="--fa-animation-duration: 0.5s"
+      ></i>
+      <i
+        class="fa-solid fa-heart fa-beat"
+        style="--fa-animation-duration: 2s"
+      ></i>
+      <i class="fa-solid fa-heart fa-beat" style="--fa-beat-scale: 2"></i>
+    </div>
+
+    <div class="fa-3x">
+      <i class="fa-solid fa-compact-disc fa-flip"></i>
+      <i class="fa-solid fa-camera-rotate fa-flip"></i>
+      <i class="fa-solid fa-cassette-tape fa-flip"></i>
+      <i
+        class="fa-solid fa-scroll fa-flip"
+        style="--fa-flip-x: 1; --fa-flip-y: 0"
+      ></i>
+      <i
+        class="fa-solid fa-money-check-dollar fa-flip"
+        style="--fa-animation-duration: 3s"
+      ></i>
+    </div>
+
+    <hr />
+
+    <p><i class="fa-solid fa-phone"></i> +977 9812345678</p>
+    <p>
+      <i class="fa-solid fa-envelope"></i>
+      <a href="#">info@yoursite.com</a>
+    </p>
+
+    <hr />
+    <button><i class="fa-solid fa-paper-plane"></i> Send</button>
+    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    <button><i class="fa-solid fa-user-plus"></i> Add User</button>
+    <button><i class="fa-brands fa-facebook-f"></i></button>
+    <button><i class="fa-brands fa-twitter"></i></button>
+  </body>
+</html>
