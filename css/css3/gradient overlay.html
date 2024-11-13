@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      div {
+        width: 800px;
+        height: 300px;
+        margin: 15px auto;
+        border: 1px solid purple;
+        text-align: center;
+        line-height: 200px;
+        background-size: cover;
+        background-position: center;
+        color: white;
+      }
+      .box1 {
+        background-image: linear-gradient(
+            rgba(255, 0, 0, 0.5),
+            rgba(0, 0, 255, 0.7)
+          ),
+          url(child.jpg);
+      }
+      .box2 {
+        background-image: linear-gradient(
+            90deg,
+            rgba(255, 0, 0, 0.5),
+            rgba(0, 0, 255, 0.7)
+          ),
+          url(child.jpg);
+      }
+      .box3 {
+        background-image: linear-gradient(
+            90deg,
+            rgba(255, 0, 0, 0.5),
+            rgba(255, 0, 0, 0.5)
+          ),
+          url(child.jpg);
+      }
+      .box4 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.9)
+          ),
+          url(child.jpg);
+      }
+      .box5 {
+        background-image: conic-gradient(
+            rgba(255, 0, 0, 0.5),
+            rgba(0, 0, 255, 0.5),
+            rgba(0, 128, 0, 0.5),
+            rgba(255, 255, 0, 0.5),
+            rgba(255, 0, 0, 0.5)
+          ),
+          url(child.jpg);
+      }
+      .box6 {
+        background-image: repeating-linear-gradient(
+            90deg,
+            rgba(255, 0, 0, 0.5),
+            rgba(0, 0, 255, 0.5) 20%
+          ),
+          url(child.jpg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <h1>Gradient Overlay</h1>
+    </div>
+    <div class="box2">
+      <h1>Gradient Overlay</h1>
+    </div>
+    <div class="box3">
+      <h1>Gradient Overlay</h1>
+    </div>
+    <div class="box4">
+      <h1>Gradient Overlay</h1>
+    </div>
+    <div class="box5">
+      <h1>Gradient Overlay</h1>
+    </div>
+    <div class="box6">
+      <h1>Gradient Overlay</h1>
+    </div>
+  </body>
+</html>
