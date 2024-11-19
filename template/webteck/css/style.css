@@ -1,0 +1,16 @@
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #684df4;
+  --light-blue: #e1eaff;
+}
+
+/* header */
+.top-header {
+  background-color: var(--bs-purple);
+}
+
+/* navigation */
+#primaryNav {
+  background-color: var(--light-blue);
+}
